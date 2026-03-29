@@ -175,3 +175,32 @@ document.getElementById('checkoutForm').onsubmit = function() {
         cartBar.classList.remove('active');
     }, 1000);
 };
+
+
+// Thanks order alert
+const form = document.getElementById('checkoutForm');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Pigilan ang default redirect ng Formspree
+
+    const formData = new FormData(form);
+    
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            // DITO NATIN SIYA PIPILITIN MAG-REDIRECT
+            window.location.href = "thanks.html"; 
+        } else {
+            alert("May problema sa pag-send. Pakisubukang muli.");
+        }
+    } catch (error) {
+        alert("Error: " + error.message);
+    }
+});
