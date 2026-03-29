@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Coffee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="logo-name-nav">
+        <div class="brand">
+            <div class="logo">
+                <img src="dreamyCoffee_logo.webp" alt="Dreamy coffee shop logo">
+            </div>
+            <div class="name">
+                <h2>Dreamy Coffee</h2>
+            </div>
+        </div>
+        <nav class="navigation">
+            <div class="menuToggle" id="menuToggle">
+                ☰
+            </div>
+            <div class="navLinks">
+                <a href="#home">Home</a>
+                <a href="#aboutUs">About Us</a>
+                <a href="#menu">Menu</a>
+                <a href="#announcement">Announcement</a>
+                <a href="#location">Location</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <main class="home" id="home">
+        <div class="home-section">
+            <h2>"Brewing Dreams in <br> Every Cup"</h2>
+        </div>
+    </main>
+
+    <!-- About Us Section -->
+    <article class="aboutUs-Section" id="aboutUs">
+        <div class="aboutUs">
+            <div class="title-paragraph">
+                <div class="aboutUs-title">
+                    <h3>About Us</h3>
+                </div>
+                <div class="aboutUs-paragraph">
+                    <p>Starting with a vision to provide a relaxing coffee experience, Dreamy Coffee ensures that 
+                       every cup we serve is made with passion and care.
+                    </p>
+                </div>
+            </div>
+            <div class="aboutUs-picture">
+                <img src="about-usPic_DC.webp" alt="Comfortable place with coffee">
+            </div>
+        </div>
+    </article>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="menu-title">
+            <h3>Menu</h3>
+        </div>
+    
+        <div class="categories">
+            <ul>
+                <li class="active-category" data-category="coffee">Coffee</li>
+                <li data-category="non-coffee">Non-Coffee</li>
+                <li data-category="fruity">Fruity</li>
+                <li data-category="milk-tea">Milk-Tea</li>
+                <li data-category="pastries">Pastries</li>
+            </ul>
+        </div>
+
+        <main class="products-container">
+
+            <!-- Coffee Products -->
+            <div class="product" data-item="coffee">
+                <div class="product-img">
+                    <img src="Latte.webp" alt="Spanish Latte">
+                </div>
+                <div class="product-name">
+                    <h5>Spanish Latte</h5>
+                    <p>Creamy & Sweet</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 100.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="coffee">
+                <div class="product-img">
+                    <img src="whiteMocha.webp" alt="White Mocha">
+                </div>
+                <div class="product-name">
+                    <h5>White Mocha</h5>
+                    <p>Sweet & Silky Smooth</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 190.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="coffee">
+                <div class="product-img">
+                    <img src="caramelMacchiato.webp" alt="Caramel Macchiato">
+                </div>
+                <div class="product-name">
+                    <h5>Caramel Macchiato</h5>
+                    <p>Buttery & Sweet</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 120.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="coffee">
+                <div class="product-img">
+                    <img src="americanoCoffee.webp" alt="Americano Coffee">
+                </div>
+                <div class="product-name">
+                    <h5>Americano Coffee</h5>
+                    <p>Pure Espresso Shot</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 90.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+
+            <!-- Non-Coffee -->
+            <div class="product" data-item="non-coffee">
+                <div class="product-img">
+                    <img src="creamyPureMatchaLatte.webp" alt="Creamy Pure Matcha Latte">
+                </div>
+                <div class="product-name">
+                    <h5>Creamy Pure Matcha Latte</h5>
+                    <p>Premium ceremonial grade matcha whisked with velvety steamed milk</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 165.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="non-coffee">
+                <div class="product-img">
+                    <img src="hojichaLatte.webp" alt="Hojicha Latte">
+                </div>
+                <div class="product-name">
+                    <h5>Hojicha Latte</h5>
+                    <p>Roasted green tea with a distinct nutty and smoky aroma</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 160.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="non-coffee">
+                <div class="product-img">
+                    <img src="indulgentHotCoffee.webp" alt="Indulgent Hot Chocolate">
+                </div>
+                <div class="product-name">
+                    <h5>Indulgent Hot Chocolate</h5>
+                    <p>Rich, melted dark chocolate topped with a swirl of cream</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 120.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="non-coffee">
+                <div class="product-img">
+                    <img src="strawberryMatchaSago.webp" alt="Strawberry Matcha Sago">
+                </div>
+                <div class="product-name">
+                    <h5>Strawberry Matcha Sago</h5>
+                    <p>Fresh strawberry bits, chewy sago, and a layered matcha finish</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 185.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <!-- Fruity -->
+            <div class="product" data-item="fruity">
+                <div class="product-img">
+                    <img src="classicLemonade.webp" alt="Classic Lemonade">
+                </div>
+                <div class="product-name">
+                    <h5>Classic Lemonade</h5>
+                    <p>Fresh & Zesty</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 100.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="fruity">
+                <div class="product-img">
+                    <img src="peachMangoTea.webp" alt="Peach Mango Tea">
+                </div>
+                <div class="product-name">
+                    <h5>Peach Mango Tea</h5>
+                    <p>Sweet & Tropical</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 130.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="fruity">
+                <div class="product-img">
+                    <img src="lycheeBerryFizz.webp" alt="Lychee Berry Fizz">
+                </div>
+                <div class="product-name">
+                    <h5>Lychee Berry Fizz</h5>
+                    <p>Sparkling & Sweet</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 145.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="fruity">
+                <div class="product-img">
+                    <img src="passion-fruit-cloud.webp" alt="Passion Fruit Cloud">
+                </div>
+                <div class="product-name">
+                    <h5>Passion Fruit Cloud</h5>
+                    <p>Tangy with Creamy Foam</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 150.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+
+            <!-- Milk Tea -->
+            <div class="product" data-item="milk-tea">
+                <div class="product-img">
+                    <img src="cookiesAndCream.webp" alt="Cookies & Cream">
+                </div>
+                <div class="product-name">
+                    <h5>Cookies & Cream</h5>
+                    <p>Rich and creamy milk tea blended with crushed chocolate cookies.</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 135.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+ 
+            <div class="product" data-item="milk-tea">
+                <div class="product-img">
+                    <img src="okinawa.webp" alt="Okinawa">
+                </div>
+                <div class="product-name">
+                    <h5>Okinawa</h5>
+                    <p>Classic favorite with a distinct roasted brown sugar flavor</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 120.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="milk-tea">
+                <div class="product-img">
+                    <img src="pandaMilktea.webp" alt="Panda Milk Tea">
+                </div>
+                <div class="product-name">
+                    <h5>Panda Milk Tea</h5>
+                    <p>Classic milk tea topped with a mix of black and white chewy pearls</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 140.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="milk-tea">
+                <div class="product-img">
+                    <img src="thaiMilktea.webp" alt="Thai Milk Tea">
+                </div>
+                <div class="product-name">
+                    <h5>Thai Milk Tea</h5>
+                    <p>Authentic strongly-brewed black tea with a sweet, floral aroma</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 125.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+
+            <!-- Pantries -->
+            <div class="product" data-item="pastries">
+                <div class="product-img">
+                    <img src="blueberryCheesecake.webp" alt="Blueberry Cheese Cake">
+                </div>
+                <div class="product-name">
+                    <h5>Blueberry Cheese Cake</h5>
+                    <p>Rich & Velvety</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 180.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="pastries">
+                <div class="product-img">
+                    <img src="butterCroissant.webp" alt="Butter Croissant">
+                </div>
+                <div class="product-name">
+                    <h5>Butter Croissant</h5>
+                    <p>Flaky & Buttery</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 95.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="pastries">
+                <div class="product-img">
+                    <img src="chineseEggTart.webp" alt="Chinese Egg Tart">
+                </div>
+                <div class="product-name">
+                    <h5>Chinese Egg Tart</h5>
+                    <p>Silky Custard Center</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 65.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+
+            <div class="product" data-item="pastries">
+                <div class="product-img">
+                    <img src="darkChocCookie.webp" alt="Dark Chocolate Cookies">
+                </div>
+                <div class="product-name">
+                    <h5>Dark Chocolate Cookies</h5>
+                    <p>Soft & Chewy</p>
+                </div>
+                <div class="price-cart">
+                    <p>P 85.00</p>
+                    <input type="button" class="add-btn" value="ADD TO CART">
+                </div>
+            </div>
+        </main>
+
+        <div class="cart-bar" id="cartBar">
+            <div class="cart-info">
+                <span id="cartCount">0 Item</span>
+                <span> | </span>
+                <span id="cartTotal">P 0.00</span>
+            </div>
+            <button type="button" class="order-now-btn" id="openModalBtn">ORDER NOW</button>
+        </div>
+
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Checkout Details</h2>
+        
+                <div id="modalOrderSummary" class="modal-summary"></div>
+
+                <form action="https://formspree.io/f/mgopoeno" method="POST" id="checkoutForm">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+    
+                    <input type="hidden" name="Orders" id="hiddenOrderInput">
+                    <input type="hidden" name="Total" id="hiddenTotalInput">
+
+                    <div class="input-group">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="Phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="Address" placeholder="Delivery Address" required></textarea>
+                    </div>
+
+                    <button type="submit" class="confirm-btn">CONFIRM ORDER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Announcement Section -->
+    <section class="announcement" id="announcement">
+        <article>
+            <div class="announcement-container">
+                <div class="content">
+                    <div class="annoucement-title">
+                        <h3>Announcement</h3>
+                    </div>
+                    <div class="announcement-content">
+                        <h2>Grand Opening Promo</h2>
+                        <p>Details:</p>
+                        <p>Get 20% OFF on all drinks from April 1 to 7, 2026. Available for
+                           walk-ins only at our Marikina Branch.
+                        </p>
+                        <a href="#location">
+                            <input type="button" class="location-btn" value="View Location">
+                        </a>
+                    </div>
+                </div>
+                <div class="announcement-img">
+                    <img src="coffeeShopPlace.webp" alt="Dreamy Coffee Shop">
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="location-container">
+            <div class="location-title">
+                <h3>Our Location</h3>
+            </div>
+            <div class="location-content">
+                <div class="location-map">
+                    <img src="mapLocation.webp" alt="Map loation of Dreamy Coffee Shop">
+                </div>
+                <div class="location-info">
+                    <p class="location-info-content">Find us at the heart of Marikina City, where the aroma of freshly brewed coffee fills the air. 
+                       Our cozy café is nestled in a vibrant neighborhood, making it the perfect spot to relax and enjoy your favorite cup of coffee.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <p><b>Address:</b> 123 Dreamy St. Rodrigues, Marikina City</p>
+                        <p><b>Contact:</b> (02) 1234-5678 | +63 912 345 6789</p>
+                        <p><b>Brewing Hours:</b> 8:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
