@@ -151,7 +151,8 @@ nav .menuToggle{
 /* Home Section */
 .home {
     background-image: url(backgroundPic_DC.webp);
-    height: 80vh;
+    height: auto;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,7 +189,11 @@ nav .menuToggle{
 /* About Us Section */
 .aboutUs-Section {
     background-color: #FFFDF5;
-    height: 100vh;
+    height: auto;           /* Palitan ang 100vh ng auto */
+    min-height: 100vh;      /* Opsyonal: Para siguradong sakop ang buong screen kung maikli ang text */
+    padding: 60px 0;        /* Dagdagan ng padding para may huminga sa taas at baba */
+    display: flex;
+    align-items: center;
 }
 
 .aboutUs {
@@ -196,9 +201,10 @@ nav .menuToggle{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px;
+    padding: 20px 40px;     /* Bawasan ang top/bottom padding dito dahil may padding na ang section */
     gap: 5vh;
-}
+    width: 100%;            /* Siguraduhing sakop ang lapad */
+}   
 
 .title-paragraph {
     display: flex;
@@ -271,10 +277,9 @@ nav .menuToggle{
 
 @media (min-width: 1024px) {
     .aboutUs-Section {
-        height: auto;
-        min-height: 90vh; 
-        display: flex;
-        align-items: center;
+        height: auto;       /* Siguraduhin na auto pa rin dito */
+        min-height: 100vh; 
+        padding: 100px 0;   /* Mas malaking space sa desktop */
     }
 
     .aboutUs {
@@ -313,8 +318,8 @@ nav .menuToggle{
     }
 
     .aboutUs-picture img {
-        width: 350px;           
-        height: 480px;
+        max-width: 100%;           
+        height: auto;
         border-radius: 50% / 40%; 
         box-shadow: 20px 20px 60px rgba(78, 52, 46, 0.1);
     }
@@ -322,7 +327,7 @@ nav .menuToggle{
 
 /* Menu Section */
 .menu {
-    min-height: 100vh;
+    height: auto;
     background-color: #D6C2B0;
     display: flex;
     flex-direction: column;
@@ -660,6 +665,10 @@ li,
 
 /* --- TABLET VIEW (768px and up) --- */
 @media screen and (min-width: 768px) {
+    menu {
+        height: auto;
+        min-height: 100vh;
+    }
     .menu-title {
         margin-top: 5%; 
         font-size: 2.5rem;
@@ -879,7 +888,8 @@ a {
 /* Location Section */
 .location {
     background-color:  #D6C2B0;
-    min-height: 90vh;
+    min-height: 100vh;
+    height: auto;
     padding: 20% 40px;
 }
 
