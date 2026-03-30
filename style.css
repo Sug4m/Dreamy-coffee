@@ -754,10 +754,11 @@ li,
 .announcement {
     background-color: #FFFDF5;
     min-height: 90vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25% 40px;
+    padding: 25% 20px;
 }
 
 .announcement-container {
@@ -767,7 +768,8 @@ li,
     align-items: center;
     padding: 50px 30px;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
+    width: auto;
     border-radius: 50px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     text-align: start;
