@@ -189,9 +189,9 @@ nav .menuToggle{
 /* About Us Section */
 .aboutUs-Section {
     background-color: #FFFDF5;
-    height: auto;           /* Palitan ang 100vh ng auto */
-    min-height: 100vh;      /* Opsyonal: Para siguradong sakop ang buong screen kung maikli ang text */
-    padding: 60px 0;        /* Dagdagan ng padding para may huminga sa taas at baba */
+    height: auto;           
+    min-height: 100vh;     
+    padding: 60px 0;       
     display: flex;
     align-items: center;
 }
@@ -201,9 +201,9 @@ nav .menuToggle{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;     /* Bawasan ang top/bottom padding dito dahil may padding na ang section */
+    padding: 20px 40px;     
     gap: 5vh;
-    width: 100%;            /* Siguraduhing sakop ang lapad */
+    width: 100%;     
 }   
 
 .title-paragraph {
@@ -277,9 +277,9 @@ nav .menuToggle{
 
 @media (min-width: 1024px) {
     .aboutUs-Section {
-        height: auto;       /* Siguraduhin na auto pa rin dito */
+        height: auto;      
         min-height: 100vh; 
-        padding: 100px 0;   /* Mas malaking space sa desktop */
+        padding: 100px 0;  
     }
 
     .aboutUs {
@@ -432,37 +432,32 @@ nav .menuToggle{
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.655);
     
-    /* Siguradong pasok sa screen */
     width: 100%; 
     max-width: 350px;
-    box-sizing: border-box; /* Isinasama ang padding sa sukat ng width */
+    box-sizing: border-box;
     margin: 0 auto;
     
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Security guard: putol ang anumang luluwa */
+    overflow: hidden;
 }
 
 .product-img {
     width: 100%;
-    /* Inalis natin ang max-width dito para sumunod lang siya sa parent container */
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden; 
 }
 
 .product-img img {
-    /* Pinaka-importante: */
     width: 100%; 
-    max-width: 100%; /* Hinding-hindi lalampas sa .product-img container */
+    max-width: 100%; 
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
     display: block; 
-    transition: transform 0.3s ease; /* Dagdag effect para sa UI/UX */
+    transition: transform 0.3s ease; 
 }
-
-/* Hover effect para magmukhang professional ang design */
 .product:hover .product-img img {
     transform: scale(1.05);
 }
@@ -680,20 +675,20 @@ li,
 
     .products-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dalawang column */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
-        max-width: 850px; /* Nilimitahan para hindi masyadong malapad */
+        max-width: 850px; 
         margin: 0 auto;
         padding: 20px;
     }
 
     .product {
-        width: 100%; /* Susunod siya sa sukat ng grid column */
-        max-width: none; /* Alisin ang limit para pumuno sa column */
+        width: 100%; 
+        max-width: none; 
     }
 
     .product-img img {
-        height: 180px; /* Mas maliit na height para sa tablet */
+        height: 180px;
         width: 100% !important;
         max-width: 100% !important;
     }
@@ -712,12 +707,12 @@ li,
     }
 
     .products-container {
-        grid-template-columns: repeat(3, 1fr); /* Tatlong column */
+        grid-template-columns: repeat(3, 1fr);
         max-width: 1100px;
     }
 
     .product-img img {
-        height: 220px; /* Balik sa mas malaking height para sa desktop */
+        height: 220px;
     }
 
     .cart-bar {
@@ -1005,23 +1000,22 @@ a {
     .location-map {
         flex: 1;
         display: flex;
-        justify-content: flex-end; /* Nakadikit sa gitna division */
+        justify-content: flex-end;
     }
 
     .location-map img {
-        max-width: 500px; /* Mas malaki na sa desktop */
+        max-width: 500px;
         height: auto;
     }
 
-    /* Kanang Side (Info & Shop Photo) */
     .location-info {
         flex: 1;
-        align-items: flex-start; /* Left aligned ang text sa desktop */
+        align-items: flex-start; 
         text-align: left;
     }
 
     .location-info-content {
-        text-align: left; /* From center to left alignment */
+        text-align: left;
         max-width: 500px;
     }
 
@@ -1033,6 +1027,176 @@ a {
 /* --- LARGE SCREENS (1200px and up) --- */
 @media screen and (min-width: 1200px) {
     .location-content {
-        gap: 100px; /* Mas malawak na space para sa premium feel */
+        gap: 100px; 
+    }
+}
+
+
+/* Footer Section */
+.footer-container {
+    background-color: #4E342E;
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+    gap: 50px;
+}
+
+.logo-tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+}
+
+.logo-tagline img {
+    width: 70px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-tagline h5 {
+    color: #FFFDF5;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.footer-contacts h6 {
+    color: #FFFDF5;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-contacts p {
+    color: #FFFDF5;
+    letter-spacing: 0.8px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.quick-links h6 {
+    color: #FFFDF5;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quick-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.8px;
+}
+
+.quick-links li {
+    list-style: none;
+}
+
+.quick-links a {
+    color: #FFFDF5;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.quick-links a:hover {
+    color: #D4A373;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media i {
+    color: #FFFDF5;
+    font-size: 24px;
+}
+.social-media i:hover {
+    color: #D4A373;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.copyright p {
+    color: #FFFDF5;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        justify-content: center;  
+        align-items: flex-start; 
+        
+        padding: 80px 20px;   
+        gap: 100px;      
+        width: 100%;
+    }
+
+    .logo-tagline, 
+    .footer-contacts, 
+    .quick-links {
+        flex: 0 1 auto;            
+        min-width: 200px;    
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;     
+    }
+
+    .social-media {
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .copyright {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 253, 245, 0.1);
     }
 }
