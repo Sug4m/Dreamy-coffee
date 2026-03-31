@@ -978,6 +978,7 @@ a {
     .location {
         padding: 80px 40px;
         min-height: 90vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
